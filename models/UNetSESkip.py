@@ -94,10 +94,10 @@ class UNetSESkip(nn.Module):
         self.bilinear = bilinear
 
         self.inc = DoubleConv(n_channels, 64)
-        self.down1 = Down(64, 128)
-        self.down2 = Down(128, 256)
-        self.down3 = Down(256, 512)
-        self.down4 = Down(512, 512)
+        self.down1 = Down(64, 128, dilation=1)
+        self.down2 = Down(128, 256, dilation=2)
+        self.down3 = Down(256, 512, dilation=4)
+        self.down4 = Down(512, 512, dilation=8)
         self.up1 = UpSkipSE(1024, 256, bilinear, use_se=True)  # Apply SE block in skip connection
         self.up2 = UpSkipSE(512, 128, bilinear, use_se=True)   # Apply SE block in skip connection
         self.up3 = UpSkipSE(256, 64, bilinear, use_se=True)    # Apply SE block in skip connection
