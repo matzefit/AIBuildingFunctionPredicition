@@ -105,8 +105,8 @@ class UNet(nn.Module):
 
         self.inc = DoubleConv(n_channels, 64)
         self.down1 = Down(64, 128, dilation=1)
-        self.down2 = Down(128, 256, dilation=1)
-        self.down3 = Down(256, 512, dilation=1)
+        self.down2 = Down(128, 256, dilation=2)
+        self.down3 = Down(256, 512, dilation=4)
         self.down4 = Down(512, 512, dilation=4)
         self.up1 = Up(1024, 256, bilinear)
         self.up2 = Up(512, 128, bilinear)
