@@ -11,3 +11,7 @@ For generating the training data, Building function has been derived from the la
 - models/UNetDilation.py represents the python file containing the final model architecture. Its based on a Unet with a dilation of 4 in the convolutional layer after the latent space. 
 - training.ipynb contains the entire code for loading the training data, running the training and outputting the results along with validation. 
 - best_model.pth and model_allEpochs.pth represent model checkpoints.
+
+Generated Training Data: 
+
+https://drive.google.com/drive/folders/13RgpPbBzmEEcxMWIjhLUr2EkPpMxmDkF?usp=sharing
