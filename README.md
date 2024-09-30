@@ -15,3 +15,6 @@ For generating the training data, Building function has been derived from the la
 Generated Training Data: 
 
 https://drive.google.com/drive/folders/13RgpPbBzmEEcxMWIjhLUr2EkPpMxmDkF?usp=sharing
+
+Report: 
+https://drive.google.com/file/d/1r7yudNqvHATteZnvEuiTK_MlIaUu5DBs/view?usp=sharing
